@@ -1,7 +1,8 @@
 <template>
   <nav>
     <div class="nav__link">
-      <NuxtLink to="/">Home page</NuxtLink>
+      <Logo />
+      <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
     </div>
   </nav>
@@ -11,17 +12,17 @@
 export default {
   name: 'NavBar',
   props: {
-    // eslint-disable-next-line vue/require-default-prop
     msg: String
   }
 }
 </script>
+
 <style scoped>
 .nav {
-    display: flex;
+  display: flex;
 }
 
 .nav__link {
-    padding: 1rem;
+  padding: 1rem;
 }
 </style>
