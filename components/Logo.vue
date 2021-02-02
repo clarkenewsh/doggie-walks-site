@@ -42,9 +42,9 @@
 <style scoped>
 .doggie-walks-logo {
   animation: 1s appear;
-  margin: auto;
   height: auto;
   max-width: 7rem;
+  margin-right: auto;
 }
 
 

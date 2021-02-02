@@ -1,7 +1,7 @@
 <template>
   <nav>
+    <Logo />
     <div class="nav__link">
-      <Logo />
       <NuxtLink to="/">Home</NuxtLink>
       <NuxtLink to="/about">About</NuxtLink>
     </div>
@@ -18,11 +18,10 @@ export default {
 </script>
 
 <style scoped>
-.nav {
+nav {
   display: flex;
+  background-color: #f2f2f2;
 }
-
-.nav__link {
-  padding: 1rem;
-}
+/* .nav__link {
+} */
 </style>
