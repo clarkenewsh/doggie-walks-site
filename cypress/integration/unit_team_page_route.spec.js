@@ -23,8 +23,7 @@ describe('The Meet the Team Page', () => {
       .should('have.text', 'Meet the Team')
 
     // Save screenshot of test result to screenshots folder
-    cy.screenshot(teamPageRouteTest)
-
+    cy.screenshot()
   })
 })
 

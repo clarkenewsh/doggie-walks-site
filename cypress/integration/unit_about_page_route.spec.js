@@ -13,7 +13,7 @@ describe('The About Page', () => {
     // eslint-disable-next-line no-undef
     cy.visit('http://localhost:3000/about')
 
-    // Should be on a new URL which includes '/'
+    // Should be on a new URL which includes '/about'
     // eslint-disable-next-line no-undef
     cy.url().should('include', '/about')
 
@@ -22,6 +22,8 @@ describe('The About Page', () => {
       // eslint-disable-next-line padded-blocks
       .should('have.text', 'About')
 
+    // Save screenshot of test result to screenshots folder
+    cy.screenshot()
   })
 })
 
