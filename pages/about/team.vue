@@ -1,10 +1,8 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="title">
-        Meet the Team
-      </h1>
-    </div>
+  <div>
+    <h1 class="title">
+      Meet the Team
+    </h1>
   </div>
 </template>
 <script>
