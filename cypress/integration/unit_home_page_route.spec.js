@@ -22,13 +22,13 @@ describe('The Home Page', () => {
       // eslint-disable-next-line padded-blocks
       .should('have.text', 'Home Page')
 
+    // Save screenshot of test result to screenshots folder
+    cy.screenshot(homePageRouteTest)
   })
 })
 
-
-//  Cypress 
+//  Cypress
 // Visit a web page.
 // Query for an element.
 // Interact with that element.
 // Assert about the content on the page.
-

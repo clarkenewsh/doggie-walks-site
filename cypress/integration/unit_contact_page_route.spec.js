@@ -22,6 +22,8 @@ describe('The Contact Page', () => {
       // eslint-disable-next-line padded-blocks
       .should('have.text', 'Contact')
 
+    // Save screenshot of test result to screenshots folder
+    cy.screenshot(contactPageRouteTest)
   })
 })
 
