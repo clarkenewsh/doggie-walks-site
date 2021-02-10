@@ -1,22 +1,21 @@
 <template>
-<div>
+  <div>
     <header>
       <NavBar />
     </header>
-    <main>
+    <main class="grid">
       <Nuxt />
     </main>
-    <footer>
-
-    </footer>
+    <footer />
   </div>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+
 export default {
   components: {
-    NavBar,
+    NavBar
   }
 }
 </script>
@@ -41,7 +40,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
-
+/* Mobile first css grid styles */
 .grid {
   display: grid;
   grid-template-columns: 1% 1fr 1%;
@@ -51,14 +50,11 @@ html {
 
 main {
   min-height: 100vh;
+  grid-column: 2;
 }
 
 header, main, footer {
   grid-column: 2;
-}
-
-footer {
-
 }
 
 @media only screen and (min-width: 768px) {
