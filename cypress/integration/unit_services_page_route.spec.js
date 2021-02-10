@@ -20,7 +20,7 @@ describe('The Services Page', () => {
     // Page title should be Services Page
     cy.get('title')
       // eslint-disable-next-line padded-blocks
-      .should('have.text', 'Services')
+      .should('have.text', 'Services & cost')
 
     // Save screenshot of test result to screenshots folder
     cy.screenshot()

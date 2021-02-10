@@ -20,7 +20,7 @@ describe('The About Page', () => {
     // Page title should be About Page
     cy.get('title')
       // eslint-disable-next-line padded-blocks
-      .should('have.text', 'About')
+      .should('have.text', 'About us')
 
     // Save screenshot of test result to screenshots folder
     cy.screenshot()
