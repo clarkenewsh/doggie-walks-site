@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        About Page
+        About us Page
       </h1>
     </div>
   </div>
@@ -11,7 +11,7 @@
 export default {
   data () {
     return {
-      title: 'About'
+      title: 'About us'
     }
   },
   head () {
