@@ -9,6 +9,16 @@
 </template>
 <script>
 export default {
+  data () {
+    return {
+      title: 'Gallery'
+    }
+  },
+  head () {
+    return {
+      title: this.title
+    }
+  }
 }
 </script>
 

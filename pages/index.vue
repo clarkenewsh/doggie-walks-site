@@ -2,13 +2,24 @@
   <div class="container">
     <div>
       <h1 class="title">
-        Doggie Walks Homepage
+        Home Page
       </h1>
     </div>
   </div>
 </template>
+
 <script>
 export default {
+  data () {
+    return {
+      title: 'Home Page'
+    }
+  },
+  head () {
+    return {
+      title: this.title
+    }
+  }
 }
 </script>
 
