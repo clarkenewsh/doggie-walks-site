@@ -2,19 +2,17 @@
   <div class="container">
     <div>
       <h1 class="title">
-        DoggieWalks Homepage
+        Doggie Walks Homepage
       </h1>
     </div>
   </div>
 </template>
-
 <script>
 export default {
-
 }
 </script>
 
-<style>
+<style scoped>
 .container {
   margin: 0 auto;
   min-height: 100vh;

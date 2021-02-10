@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <h1 class="title">
-        About Page
+        Gallery
       </h1>
     </div>
   </div>
