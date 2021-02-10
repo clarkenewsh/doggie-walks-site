@@ -30,4 +30,8 @@ export default {
 </script>
 
 <style scoped>
+section {
+    grid-column: 2;
+}
+
 </style>
