@@ -20,6 +20,7 @@
       Contact
     </NuxtLink>
     <ContactCTA />
+    <Slogan />
   </nav>
 </template>
 
@@ -39,11 +40,12 @@ nav {
   padding: 20px 0;
   text-transform: capitalize;
   height: 500px;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-wallpaper.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
+  font-size: 110%;
 }
 
 nav a  {
