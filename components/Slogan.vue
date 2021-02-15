@@ -14,9 +14,10 @@ export default {
 
 <style scoped>
 p {
-    font-size: 50px;
+    font-size: 38px;
     display: block;
     color: cornsilk;
+    font-family: 'Gochi Hand', cursive;
 }
 
 </style>
