@@ -6,16 +6,18 @@
     <main class="grid">
       <Nuxt />
     </main>
-    <footer />
+    <TheFooter />
   </div>
 </template>
 
 <script>
 import NavBar from '~/components/NavBar.vue'
+import TheFooter from '~/components/TheFooter.vue'
 
 export default {
   components: {
-    NavBar
+    NavBar,
+    TheFooter
   }
 }
 </script>
@@ -48,9 +50,40 @@ html {
   grid-row-gap: 3rem;
 }
 
+h1 {
+  font-weight: 900;
+  font-size: 3rem;
+  
+}
+/* 
+h1::after {
+  content: url('~assets/dog-doogle.png');
+  background-size: 10px 20px;
+  height: 10px;
+  width: 20px;
+} */
+
+h1,
+h2,
+h3,
+h4 {
+  color: #2E495E;
+}
+
+h2,
+h3,
+h4 {
+  font-family: 'Patrick Hand SC', cursive;
+}
+
+header {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
+}
+
 main {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   grid-column: 2;
+  padding: 60px 0px;
 }
 
 header, main, footer {
@@ -59,19 +92,19 @@ header, main, footer {
 
 @media only screen and (min-width: 768px) {
   .grid {
-    grid-template-columns: 3% 1fr 3%;
+    grid-template-columns: 2% 1fr 2%;
   }
 }
 
 @media only screen and (min-width: 1024px) {
     .grid {
-      grid-template-columns: 6% 1fr 6%;
+      grid-template-columns: 3% 1fr 3%;
   }
  }
 
 @media only screen and (min-width: 1400px) {
       .grid {
-      grid-template-columns: 15% 1fr 15%;
+      grid-template-columns: 6% 1fr 6%;
   }
 }
 </style>
