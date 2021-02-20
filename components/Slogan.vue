@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <p id="slogan">
+  <div id="slogan">
+    <p>
       Helping our animal friends one paw at a time
     </p>
   </div>
@@ -13,11 +13,13 @@ export default {
 </script>
 
 <style scoped>
-p {
-    font-size: 38px;
-    display: block;
-    color: cornsilk;
-    font-family: 'Gochi Hand', cursive;
+#slogan {
+  display: flex;
 }
-
+p {
+  font-size: 22px;
+  color: white;
+  font-family: 'Patrick Hand SC', cursive;
+  flex-basis: 100%;
+}
 </style>

@@ -20,7 +20,6 @@
       Contact
     </NuxtLink>
     <ContactCTA />
-    <Slogan />
   </nav>
 </template>
 
@@ -33,24 +32,37 @@ export default {
 <style scoped>
 nav {
   display: flex;
-  background-color: #f2f2f2;
-  justify-content:flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 20px 0;
+  justify-content: center;
   text-transform: capitalize;
-  height: 500px;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
   font-size: 110%;
+  font-weight: 700;
+  padding: 3%;
+  flex-direction: column;
+  min-height: 450px;
 }
 
 nav a  {
-  padding-right: 25px;
-  display: block;
+  padding: 10px 15px;
   color: #fff;
+  align-items: center;
 }
+
+@media only screen and (min-width: 1024px) {
+    nav{
+      padding: 3% 1fr 3%;
+      flex-direction: row;
+  }
+ }
+
+@media only screen and (min-width: 1400px) {
+      nav {
+      padding: 7% 1fr 7%;
+  }
+}
+
 </style>

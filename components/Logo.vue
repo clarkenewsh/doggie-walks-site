@@ -50,8 +50,7 @@
 .doggie-walks-logo {
   animation: 1s appear;
   height: auto;
-  max-width: 7rem;
-  margin-right: auto;
+  max-width: 9rem;
 }
 
 @keyframes appear {
