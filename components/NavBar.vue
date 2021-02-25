@@ -19,8 +19,14 @@
     <NuxtLink to="/contact">
       Contact
     </NuxtLink>
-    <ContactCTA />
-  </nav>
+    <div class="cta-block">
+      <ContactCTA />
+    </div>
+    <div>
+      <SpecialOffer />
+      <Slogan />
+    </div>
+  </nav> 
 </template>
 
 <script>
@@ -32,24 +38,35 @@ export default {
 <style scoped>
 nav {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
   text-transform: capitalize;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  font-size: 110%;
   font-weight: 700;
-  padding: 3%;
+  padding: 0px 3%;
   flex-direction: column;
   min-height: 450px;
 }
 
 nav a  {
-  padding: 10px 15px;
+  padding: 5px 10px;
   color: #fff;
   align-items: center;
+}
+
+nav a:hover,
+nav a:focus,
+nav a:active {
+  color: #acacac;
+  transition: all 0.2s ease;
+}
+
+.cta-block {
+  margin-left: auto;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -61,7 +78,7 @@ nav a  {
 
 @media only screen and (min-width: 1400px) {
       nav {
-      padding: 7% 1fr 7%;
+      padding: 5% 1fr 5%;
   }
 }
 

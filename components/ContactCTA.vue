@@ -36,15 +36,25 @@ export default {
 </script>
 
 <style scoped>
+
 button {
     border-radius: 5px;
     font-weight: 500;
-    padding: 12px 15px;
+    padding: 10px 15px;
     cursor: pointer;
     color: #fff;
     background-color: #126694;
     border: none;
     transition: 0.5s;
-    margin: 10px;
+    margin: 5px;
+    transition: all 0.2s ease;
+}
+
+button:hover,
+button:active,
+button:focus {
+  transform: translateY(4px);
+  color: #126694;
+  background: #fff;
 }
 </style>

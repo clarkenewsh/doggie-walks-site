@@ -34,13 +34,29 @@ export default {
 
 footer {
   background: #0B415E;
-  padding: 60px 0px;
+  padding: 60px 3%;
   display: flex;
   color: white;
   grid-column: 2;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+}
+
+@media only screen and (min-width: 1024px) {
+    footer {
+      padding: 3% 1fr 3%;
+      flex-direction: row;
+  }
+ }
+
+@media only screen and (min-width: 1400px) {
+      footer {
+      padding: 5% 1fr 5%;
+  }
 }
 </style>
