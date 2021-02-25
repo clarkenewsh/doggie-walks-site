@@ -53,7 +53,6 @@ html {
 h1 {
   font-weight: 900;
   font-size: 3rem;
-  
 }
 /* 
 h1::after {
@@ -90,11 +89,11 @@ header, main, footer {
   grid-column: 2;
 }
 
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   .grid {
     grid-template-columns: 2% 1fr 2%;
   }
-}
+} */
 
 @media only screen and (min-width: 1024px) {
     .grid {
@@ -104,7 +103,7 @@ header, main, footer {
 
 @media only screen and (min-width: 1400px) {
       .grid {
-      grid-template-columns: 6% 1fr 6%;
+      grid-template-columns: 5% 1fr 5%;
   }
 }
 </style>
