@@ -1,9 +1,13 @@
 <template>
-  <div>
+  <section>
     <h1 class="title">
       Gallery
     </h1>
-  </div>
+    <p>Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have been taken with the consent of every owner</p>
+    <figure>
+      image gallery component here
+    </figure>
+  </section>
 </template>
 <script>
 export default {
@@ -21,12 +25,7 @@ export default {
 </script>
 
 <style scoped>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+section {
+    grid-column: 2;
 }
 </style>
