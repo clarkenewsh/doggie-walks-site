@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div class="grid">
     <header>
       <NavBar />
     </header>
-    <main class="grid">
+    <main>
       <Nuxt />
     </main>
     <TheFooter />
@@ -42,6 +42,7 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
 /* Mobile first css grid styles */
 .grid {
   display: grid;
@@ -51,16 +52,9 @@ html {
 }
 
 h1 {
-  font-weight: 900;
+  font-weight: 500;
   font-size: 3rem;
 }
-/* 
-h1::after {
-  content: url('~assets/dog-doogle.png');
-  background-size: 10px 20px;
-  height: 10px;
-  width: 20px;
-} */
 
 h1,
 h2,
@@ -85,25 +79,22 @@ main {
   padding: 60px 0px;
 }
 
-header, main, footer {
-  grid-column: 2;
+/* full width header and footer  */
+header, footer {
+  grid-column: 1/-1;
 }
-
-/* @media only screen and (min-width: 768px) {
-  .grid {
-    grid-template-columns: 2% 1fr 2%;
-  }
-} */
 
 @media only screen and (min-width: 1024px) {
     .grid {
       grid-template-columns: 3% 1fr 3%;
+      grid-column-gap:0;
   }
  }
 
 @media only screen and (min-width: 1400px) {
-      .grid {
-      grid-template-columns: 5% 1fr 5%;
+    .grid {
+      grid-template-columns: 3% 1fr 3%;
+      grid-column-gap:0;
   }
 }
 </style>
