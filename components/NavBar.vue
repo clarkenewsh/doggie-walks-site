@@ -22,11 +22,7 @@
     <div class="cta-block">
       <ContactCTA />
     </div>
-    <div>
-      <SpecialOffer />
-      <Slogan />
-    </div>
-  </nav> 
+  </nav>
 </template>
 
 <script>
@@ -38,7 +34,6 @@ export default {
 <style scoped>
 nav {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   text-transform: capitalize;
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
@@ -55,7 +50,7 @@ nav {
 nav a  {
   padding: 5px 10px;
   color: #fff;
-  align-items: center;
+
 }
 
 nav a:hover,
@@ -69,7 +64,8 @@ nav a:active {
   margin-left: auto;
 }
 
-@media only screen and (min-width: 1024px) {
+/* not needed as layout controls this universally */
+/* @media only screen and (min-width: 1024px) {
     nav{
       padding: 3% 1fr 3%;
       flex-direction: row;
@@ -80,6 +76,6 @@ nav a:active {
       nav {
       padding: 5% 1fr 5%;
   }
-}
+} */
 
 </style>

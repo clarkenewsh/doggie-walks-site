@@ -17,7 +17,7 @@ export default {
   display: flex;
 }
 p {
-  font-size: 22px;
+  font-size: 195%;
   color: white;
   font-family: 'Patrick Hand SC', cursive;
   flex-basis: 100%;

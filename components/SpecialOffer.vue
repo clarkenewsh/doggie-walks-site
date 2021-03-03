@@ -1,6 +1,6 @@
 <template>
   <section>
-    50% off home visits for new customers.
+    <p>50% off home visits for new customers.</p>
   </section>
 </template>
 
@@ -12,7 +12,8 @@ export default {
 
 <style scoped>
 
-section {
+p {
+    color: white;
 }
 
 </style>

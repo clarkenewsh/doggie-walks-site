@@ -51,6 +51,8 @@
   animation: 1s appear;
   height: auto;
   max-width: 9rem;
+  margin: 0;
+  padding: 0;
 }
 
 @keyframes appear {
