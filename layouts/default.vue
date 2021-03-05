@@ -2,6 +2,9 @@
   <div class="grid">
     <header>
       <NavBar />
+      <SpecialOffer />
+      <Slogan />
+      <ContactCTA />
     </header>
     <main>
       <Nuxt />
@@ -13,11 +16,17 @@
 <script>
 import NavBar from '~/components/NavBar.vue'
 import TheFooter from '~/components/TheFooter.vue'
+import Slogan from '~/components/Slogan.vue'
+import SpecialOffer from '~/components/SpecialOffer.vue'
+import ContactCTA from '~/components/ContactCTA.vue'
 
 export default {
   components: {
     NavBar,
-    TheFooter
+    TheFooter,
+    Slogan,
+    SpecialOffer,
+    ContactCTA
   }
 }
 </script>
@@ -52,7 +61,7 @@ html {
 }
 
 h1 {
-  font-weight: 500;
+  font-weight: 900;
   font-size: 3rem;
 }
 
@@ -70,7 +79,12 @@ h4 {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-background.jpeg');
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/header-background2.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 450px;
+  padding: 0px 3%;
 }
 
 main {
