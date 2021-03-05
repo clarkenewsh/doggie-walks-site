@@ -51,7 +51,7 @@
   animation: 1s appear;
   height: auto;
   max-width: 9rem;
-  margin: 0;
+  margin-left: -20px;
   padding: 0;
 }
 

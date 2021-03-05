@@ -12,8 +12,15 @@ export default {
 
 <style scoped>
 
+section {
+  display: flex;
+  justify-content: flex-end;
+}
+
 p {
     color: white;
+    font-size: 150%;
+
 }
 
 </style>

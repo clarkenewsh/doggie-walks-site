@@ -44,18 +44,6 @@ footer {
 ul {
   list-style: none;
   margin: 0;
+  padding: 0;
 }
-/* not needed as layout controls this universally */
-/* @media only screen and (min-width: 1024px) {
-    footer {
-      padding: 3% 1fr 3%;
-      flex-direction: row;
-  }
- }
-
-@media only screen and (min-width: 1400px) {
-      footer {
-      padding: 5% 1fr 5%;
-  }
-} */
 </style>
