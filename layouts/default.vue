@@ -2,7 +2,6 @@
   <div class="grid">
     <header>
       <NavBar />
-      <SpecialOffer />
       <Slogan />
       <ContactCTA />
     </header>
@@ -17,7 +16,6 @@
 import NavBar from '~/components/NavBar.vue'
 import TheFooter from '~/components/TheFooter.vue'
 import Slogan from '~/components/Slogan.vue'
-import SpecialOffer from '~/components/SpecialOffer.vue'
 import ContactCTA from '~/components/ContactCTA.vue'
 
 export default {
@@ -25,7 +23,6 @@ export default {
     NavBar,
     TheFooter,
     Slogan,
-    SpecialOffer,
     ContactCTA
   }
 }
@@ -35,7 +32,7 @@ export default {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 16px;
+  font-size: 18px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -50,6 +47,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
+  line-height: 1.8;
 }
 
 /* Mobile first css grid styles */
@@ -62,7 +60,7 @@ html {
 
 h1 {
   font-weight: 900;
-  font-size: 3rem;
+  font-size: 4rem;
 }
 
 h1,
@@ -70,6 +68,14 @@ h2,
 h3,
 h4 {
   color: #2E495E;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 2.4rem;
+  letter-spacing: 1.5px;
+  word-spacing: 2.5px;
 }
 
 h2,
@@ -83,14 +89,14 @@ header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 450px;
-  padding: 0px 3%;
+  min-height: 350px;
+  padding: 0px 5%;
 }
 
 main {
   /* min-height: 100vh; */
   grid-column: 2;
-  padding: 60px 0px;
+  padding: 20px 0px;
 }
 
 /* full width header and footer  */
@@ -100,14 +106,19 @@ header, footer {
 
 @media only screen and (min-width: 1024px) {
     .grid {
-      grid-template-columns: 3% 1fr 3%;
+      grid-template-columns: 5% 1fr 5%;
       grid-column-gap:0;
+  }
+
+  header {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
   }
  }
 
 @media only screen and (min-width: 1400px) {
     .grid {
-      grid-template-columns: 3% 1fr 3%;
+      grid-template-columns: 5% 1fr 5%;
       grid-column-gap:0;
   }
 }
