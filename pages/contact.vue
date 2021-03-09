@@ -1,12 +1,19 @@
 <template>
   <section>
     <h1 class="title">
-      Contact Us
+      Contact Us &#128062;
     </h1>
-    <p>We have a wide variety of daycare facilities, listed below is all our locations and their address’. Feel free to
-      pop in or fill out the form below.</p>
+    <p>
+      We have a wide variety of daycare facilities, listed below is all our locations and their address’. Feel free to
+      pop in or fill out the form below.
+    </p>
+    <div>
+      <!-- contact form component here  -->
+      <ContactForm />
+    </div>
     <!-- Contact list component here  -->
     <div>
+      <h2>Areas we cover</h2>
       <h3>Ormskirk</h3>
       <ul>
         <li>Doggie walks</li>
@@ -33,29 +40,40 @@
         <li>WA5 1AF</li>
       </ul>
     </div>
-    <!-- contact form component here  -->
-    <ContactForm />
+    <div id="opening-times">
+      <h2>Opening Times</h2>
+      <ul>
+      <li>Monday – Friday (8am – 7pm)</li>
+      <li>Saturday (8am – 5pm)</li>
+      <li>Sunday (12pm - 5pm)</li>
+    </ul>
+
+    </div>
   </section>
 </template>
 <script>
-  export default {
-    data() {
-      return {
-        title: 'Contact'
-      }
-    },
-    head() {
-      return {
-        title: this.title
-      }
+export default {
+  data () {
+    return {
+      title: 'Contact'
+    }
+  },
+  head () {
+    return {
+      title: this.title
     }
   }
+}
 
 </script>
 
 <style scoped>
   section {
     grid-column: 2;
+  }
+
+  .address-block {
+    display: flex;
   }
 
 </style>
