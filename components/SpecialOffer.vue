@@ -1,7 +1,8 @@
 <template>
-  <section>
+  <div id="special-offer-block">
+    <h2>Special Offer Avaliable Now</h2>
     <p>50% off home visits for new customers.</p>
-  </section>
+  </div>
 </template>
 
 <script>
@@ -12,15 +13,21 @@ export default {
 
 <style scoped>
 
-section {
-  display: flex;
-  justify-content: flex-end;
+#special-offer-block {
+  background: #f5f5f5f5;
+  border: none;
+  border-radius: 5px;
+  padding: 30px;
 }
 
-p {
-    color: white;
-    font-size: 150%;
+/* h2 {
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+} */
 
+p {
+  font-weight: 700;
 }
 
 </style>

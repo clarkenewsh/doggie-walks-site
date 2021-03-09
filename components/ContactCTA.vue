@@ -1,3 +1,4 @@
+/* eslint-disable vue/no-parsing-error */
 <template>
   <div class="cta-block">
     <button>
@@ -14,16 +15,6 @@
       01772 734166
     </button>
     <button>
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        width="16"
-        height="16"
-        fill="currentColor"
-        class="bi bi-envelope-fill"
-        viewBox="0 0 16 16"
-      >
-        <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555zM0 4.697v7.104l5.803-3.558L0 4.697zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757zm3.436-.586L16 11.801V4.697l-5.803 3.546z" />
-      </svg>
       info@doggiewalks.co.uk
     </button>
   </div>
@@ -38,8 +29,10 @@ export default {
 <style scoped>
 
 .cta-block{
-  display: flex;
+  /* display: flex;
   justify-content: flex-end;
+  flex-direction: column; */
+  grid-column: 2;
 }
 
 button {
@@ -48,18 +41,22 @@ button {
     padding: 10px 15px;
     cursor: pointer;
     color: #fff;
-    background-color: #126694;
+    background-color: #022859;
     border: none;
     transition: 0.5s;
     margin: 5px;
     transition: all 0.2s ease;
 }
 
-button:hover,
-button:active,
-button:focus {
+button:hover {
   transform: translateY(4px);
   color: #126694;
   background: #fff;
 }
+
+@media only screen and (min-width: 1024px) {
+    .cta-block {
+      flex-direction: row;
+  }
+ }
 </style>

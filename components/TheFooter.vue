@@ -16,9 +16,9 @@
     </ul>
     <ul>
       <li><strong>Contact Us</strong></li>
-      <li>Phone: 01695 883 112</li>
+      <li><a href="">Phone: 01695 883 112</a></li>
       <li>
-        Email: info@doggiewalks.co.uk
+        <a href="mailto:info@doggiewalks.co.uk">Email: info@doggiewalks.co.uk</a>
       </li>
     </ul>
   </footer>
@@ -33,17 +33,32 @@ export default {
 <style scoped>
 
 footer {
-  background: #0B415E;
-  padding: 60px 3%;
+  background: #022340;
+  padding: 60px 5%;
   display: flex;
   color: white;
-  flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 ul {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 15px;
+
 }
+
+ul li:first-child {
+  padding-bottom: 10px;
+}
+
+a {
+  color: white;
+}
+
+@media only screen and (max-width: 1024px) {
+    footer {
+      flex-direction: column;
+      text-align: center;
+  }
+ }
 </style>

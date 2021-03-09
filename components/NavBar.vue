@@ -38,8 +38,9 @@ nav {
 }
 
 nav a  {
-  padding: 5px 10px;
+  padding: 10px 0px;
   color: #fff;
+  text-align: center;
 
 }
 
@@ -49,4 +50,10 @@ nav a:active {
   color: #acacac;
   transition: all 0.2s ease;
 }
+
+@media only screen and (min-width: 1024px) {
+    nav a {
+      text-align: left;
+  }
+ }
 </style>
