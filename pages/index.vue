@@ -96,12 +96,8 @@ export default {
       max-width: 100%;
   }
 
-    #how-it-works figure li {
-      list-style: none;
-    }
-
-  #how-it-works > * {
-    padding-bottom: 15px;
+  #how-it-works figure li {
+    list-style: none;
   }
 
   #areas {
@@ -112,22 +108,21 @@ export default {
   }
 
   button {
-    border-radius: 5px;
-    font-weight: 500;
-    padding: 10px 15px;
-    cursor: pointer;
-    color: #fff;
-    background-color: #023373;
-    border: none;
-    transition: 0.5s;
-    margin: 5px;
-    transition: all 0.2s ease;
-    text-align: center;
+  border-radius: 5px;
+  font-weight: 500;
+  padding: 10px 15px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #023373;
+  border: none;
+  transition: 0.5s;
+  margin: 5px;
+  transition: all 0.2s ease;
+  text-align: center;
 }
 
 button a {
   color: white;
-
 }
 
 button:hover {

@@ -52,11 +52,12 @@ section {
 
 div {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
 figure {
-  padding: 30px;
+  padding: 15px;
   box-shadow: 0 6px 10px rgb(0 0 0 / 8%);
   border-radius: 10px;
   background-color: #fff;    
