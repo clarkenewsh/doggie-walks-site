@@ -2,12 +2,12 @@
   <div id="special-offer-block">
     <h2>Special Offer Avaliable Now &#128062;</h2>
     <p>50% off home visits for new customers.</p>
-     <!-- Nuxt link to the service page route -->
-      <button>
-        <NuxtLink to="/contact">
-          Contact Us
-        </NuxtLink>
-      </button>
+    <!-- Nuxt link to the service page route -->
+    <button>
+      <NuxtLink to="/contact">
+        Contact Us
+      </NuxtLink>
+    </button>
   </div>
 </template>
 
@@ -20,8 +20,8 @@ export default {
 <style scoped>
 
 #special-offer-block {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/offer-background.jpg');
-  background-position: bottom;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/nav-wallpaper2.jpeg');
+  background-position: center;
   color: aliceblue;
   border: none;
   padding: 120px 50px;
