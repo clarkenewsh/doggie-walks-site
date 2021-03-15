@@ -32,7 +32,8 @@ export default {
 html {
   font-family: 'Source Sans Pro', -apple-system, BlinkMacSystemFont, 'Segoe UI',
     Roboto, 'Helvetica Neue', Arial, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
+
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -47,7 +48,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-  line-height: 1.8;
+  line-height: 2.0;
 }
 
 /* Mobile first css grid styles */
@@ -59,8 +60,8 @@ html {
 }
 
 h1 {
-  font-weight: 900;
-  font-size: 4rem;
+  font-weight: 700;
+  font-size: 3.1rem;
 }
 
 h1,
@@ -73,7 +74,7 @@ h4 {
 h2 {
   text-transform: uppercase;
   font-weight: 900;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   letter-spacing: 1.5px;
   word-spacing: 2.5px;
 }
@@ -85,12 +86,11 @@ h4 {
 }
 
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),  url('~assets/header-background2.jpg');
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.2)),  url('~assets/header-background2.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 350px;
-  padding: 0px 5%;
+  padding: 0px 8%;
 }
 
 main {
@@ -104,22 +104,24 @@ header, footer {
   grid-column: 1/-1;
 }
 
+#welcome > * {
+  padding-bottom: 15px;
+}
+
 @media only screen and (min-width: 1024px) {
     .grid {
       grid-template-columns: 5% 1fr 5%;
       grid-column-gap:0;
   }
-
-  header {
-      display: grid;
-      grid-template-columns: 2fr 1fr;
-  }
  }
 
 @media only screen and (min-width: 1400px) {
     .grid {
-      grid-template-columns: 5% 1fr 5%;
+      grid-template-columns: 8% 1fr 8%;
       grid-column-gap:0;
+  }
+    header {
+    min-height: 80vh;
   }
 }
 </style>

@@ -32,16 +32,16 @@ export default {
   /* display: flex;
   justify-content: flex-end;
   flex-direction: column; */
-  grid-column: 2;
+  grid-column: 1/-1;
 }
 
 button {
     border-radius: 5px;
     font-weight: 500;
-    padding: 10px 15px;
+    padding: 15px 25px;
     cursor: pointer;
     color: #fff;
-    background-color: #022859;
+    background-color: #023373;
     border: none;
     transition: 0.5s;
     margin: 5px;

@@ -1,5 +1,5 @@
 <template>
-  <a href="#"><svg
+  <a href=""><svg
     class="doggie-walks-logo"
     width="602pt"
     height="599pt"
@@ -52,6 +52,7 @@
   height: auto;
   max-width: 9rem;
   padding: 0;
+  margin: 0;
 }
 
 @keyframes appear {

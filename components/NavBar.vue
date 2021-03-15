@@ -33,13 +33,14 @@ nav {
   display: flex;
   border: none;
   font-weight: 700;
-  flex-direction: column;
-  font-size: 115%;
+  grid-column: 1/-1;
+  justify-content: flex-start;
+  align-items: center;
 }
 
 nav a  {
-  padding: 10px 0px;
-  color: #fff;
+  padding: 0px 20px;
+  color: aliceblue;
   text-align: center;
 
 }
@@ -47,13 +48,17 @@ nav a  {
 nav a:hover,
 nav a:focus,
 nav a:active {
-  color: #acacac;
+  color: gray;
   transition: all 0.2s ease;
 }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+    nav {
+      flex-direction: column;
+    }
     nav a {
       text-align: left;
+      padding: 15px;
   }
  }
 </style>

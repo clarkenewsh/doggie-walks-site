@@ -57,18 +57,20 @@ section {
     grid-row-gap: 50px;
 }
 
+#areas,
+#opening-times {
+    box-shadow: 0 6px 10px rgb(0 0 0 / 8%);
+    border-radius: 10px;
+    background-color: #fff;
+}
+
   @media only screen and (min-width: 1024px) {
     section {
-    display: grid;
-    grid-template-columns: 3fr 1fr;
     }
     #opening-times {
-      grid-column: 2;
     }
 
     #areas {
-      grid-column: 2;
-
     }
   }
 
