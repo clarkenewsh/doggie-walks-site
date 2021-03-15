@@ -1,77 +1,83 @@
 <template>
   <div>
-    <b-form v-if="show" @submit="onSubmit" @reset="onReset">
-      <b-form-group
-        id="input-group-1"
-        label="Email address:"
-        label-for="input-1"
-        description="We'll never share your email with anyone else."
-      >
-        <b-form-input
-          id="input-1"
-          v-model="form.email"
-          type="email"
-          placeholder="Enter email"
-          required
-        />
-      </b-form-group>
-
-      <b-form-group id="input-group-2" label="Your Name:" label-for="input-2">
-        <b-form-input
-          id="input-2"
-          v-model="form.name"
-          placeholder="Enter name"
-          required
-        />
-      </b-form-group>
-
-      <b-button type="submit">
-        Submit
-      </b-button>
-    </b-form>
+    <form>
+<div class="form-group">
+          <label for="exampleInputEmail1">Name</label>
+          <input type="text" class="form-control" id="InputName1"
+            placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Email address</label>
+          <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp"
+            placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Enquiry here</label>
+          <textarea class="form-control" id="FormControlTextarea1" rows="3"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
   </div>
 </template>
 
 <script>
-export default {
-  name: 'ContactForm',
-  data () {
-    return {
-      form: {
-        email: '',
-        name: '',
-        text: ''
+  export default {
+    name: 'ContactForm',
+    data() {
+      return {
+        form: {
+          email: '',
+          name: '',
+          text: ''
+        }
+      }
+    },
+    methods: {
+      onSubmit(event) {
+        event.preventDefault()
+        alert(JSON.stringify(this.form))
+      },
+      onReset(event) {
+        event.preventDefault()
+        // Reset our form values
+        this.form.email = ''
+        this.form.name = ''
+        // Trick to reset/clear native browser form validation state
       }
     }
-  },
-  methods: {
-    onSubmit (event) {
-      event.preventDefault()
-      alert(JSON.stringify(this.form))
-    },
-    onReset (event) {
-      event.preventDefault()
-      // Reset our form values
-      this.form.email = ''
-      this.form.name = ''
-      // Trick to reset/clear native browser form validation state
-    }
   }
-}
+
 </script>
 
 <style scoped>
-.doggie-walks-logo {
-  animation: 1s appear;
-  height: auto;
-  max-width: 9rem;
-  margin: 0;
-  padding: 0;
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0;
+  form {
+    margin-bottom: 100px;
+    border: 2px solid #023373;
+    border-radius: 10px;
+    background-color: #fff;
+    padding: 50px;
   }
-}
+
+  button {
+    border-radius: 5px;
+    font-weight: 500;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #fff;
+    background-color: #023373;
+    border: none;
+    transition: 0.5s;
+    margin: 5px;
+    transition: all 0.2s ease;
+  }
+
+  button a {
+    color: white;
+  }
+
+  button:hover {
+    transform: translateY(4px);
+  }
+
 </style>
