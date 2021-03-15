@@ -1,10 +1,11 @@
+/* eslint-disable no-tabs */
 <template>
   <section>
     <h1 class="title">
       Gallery &#128062;
     </h1>
     <p>Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have been taken with the consent of every owner</p>
-        <ul class="gallery">
+    <ul class="gallery">
       <li>
         <figure class="photo">
           <img src="~/assets/pexels-photo-275717.jpeg">
@@ -31,10 +32,8 @@
         </figure>
       </li>
     </ul>
-    </section>
+  </section>
 </template>
-
-
 
 <script>
 export default {
@@ -72,9 +71,9 @@ section {
 
 .photo {
 	margin: 0;
-	overflow: hidden; 
+	overflow: hidden;
 	background-color: black;
-	position: relative;	
+	position: relative;
   margin: 5px;
   border-radius: 5px;
 }
@@ -87,12 +86,11 @@ section {
   max-width: 100%;
   width: 22rem;
   height: 12rem;
-	opacity: 0.4;
+	 opacity: 0.4;
 	transform: scale(1.15);   /*this make the images 115%bigger than the orginal size of the picture. this enables us to add an effect were wghen we hover the image zooms out to its orginal scale*/
 	transition: transform 0.5s, opacity 0.5s;
 	margin: 0 auto;
 	padding: 0;
-  
 
 }
 

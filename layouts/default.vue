@@ -48,7 +48,7 @@ html {
 *:after {
   box-sizing: border-box;
   margin: 0;
-  line-height: 2.0;
+  line-height: 1.6;
 }
 
 /* Mobile first css grid styles */

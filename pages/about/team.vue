@@ -60,7 +60,7 @@ figure {
   padding: 15px;
   box-shadow: 0 6px 10px rgb(0 0 0 / 8%);
   border-radius: 10px;
-  background-color: #fff;    
+  background-color: #fff;
   color: #023373;
   text-align: center;
 }
