@@ -13,7 +13,8 @@
       <p>
         We recognise every dog's needs are different and how busy daily life can be. With services starting from only
         £10 we ensure you the best possible service to suit the needs of both you and your pooch.
-       <p> We are also fully insured for everybody's peace of mind, for more information on this please <a href="">contact
+      </p><p>
+        We are also fully insured for everybody's peace of mind, for more information on this please <a href="">contact
           us</a> or email at <a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a>
       </p>
       <div>
@@ -136,21 +137,7 @@ button:hover {
       width: 15rem;
       height: 12rem;
   }
-    section {
-    }
-
-    #welcome {
-    }
-
-    #how-it-works {
-    }
-
-    #special-offer-block {
-    }
-
-    #areas {
-
-    }
+   
   }
 
 </style>

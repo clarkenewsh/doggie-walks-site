@@ -2,24 +2,16 @@
 
 // Feature: Contact CTA (email & phone)
 
-// Acceptance Criteria:
-
 // User Story:
 // sneario: Contact busniess by email
 // Given
 // When
 // Then
 
-// User Story:
-// sneario: Contact business by phone
-// Given
-// When
-// Then
-
 // // BDD Test Case Logic: Contact CTA Feature (email & phone) containing all the user stories scnarios (deatiled above)
 
-//    1. visit services page URL
-//    2. url chould include /about/team uri
+// 1. visit services page URL - http://localhost:3000/
+// 2. Grab the browser URL, ensure it includes /
 //    2. Query for the head title of the team page
 //    3. Interact with the head title tag
 //    4. The title should be contain the page title
@@ -29,16 +21,13 @@
 // - Acceptance
 // - Integration
 
-describe('Contact CTA', () => {
-  it('should visit the services page and check service UI elements and proceed to complete and submit the contact form', () => {
+describe('Check contact CTA', () => {
+  it('should visit the home page and interact with both of the contact call to action link - phone and email', () => {
     cy.visit('http://localhost:3000/')
 
     cy.url().should('include', '/')
     cy.get('title')
 
       .should('have.text', 'Home Page')
-
-      // Save screenshot of test result to screenshots folder
-      .cy.screenshot()
   })
 })
