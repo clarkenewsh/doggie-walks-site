@@ -1,10 +1,12 @@
-/* eslint-disable no-tabs */
 <template>
   <section>
     <h1 class="title">
       Gallery &#128062;
     </h1>
-    <p>Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have been taken with the consent of every owner</p>
+    <p>
+      Every week is a busy week! Checkout how much fun our guests have within our day care centers. All photos have
+      been taken with the consent of every owner
+    </p>
     <ul class="gallery">
       <li>
         <figure class="photo">
@@ -39,41 +41,43 @@
 export default {
   name: 'ImageGallery'
 }
+
 </script>
 
 <script>
-export default {
-  data () {
-    return {
-      title: 'Gallery'
-    }
-  },
-  head () {
-    return {
-      title: this.title
+  export default {
+    data() {
+      return {
+        title: 'Gallery'
+      }
+    },
+    head() {
+      return {
+        title: this.title
+      }
     }
   }
-}
+
 </script>
 
 <style scoped>
 section {
-    grid-column: 2;
+  grid-column: 2;
 }
 
- .gallery  {
-	list-style: none;
-	display: flex;
+.gallery {
+  list-style: none;
+  display: flex;
   flex-wrap: wrap;
-	flex-grow: 1;
+  flex-grow: 1;
   padding: 0;
 }
 
 .photo {
-	margin: 0;
-	overflow: hidden;
-	background-color: black;
-	position: relative;
+  margin: 0;
+  overflow: hidden;
+  background-color: black;
+  position: relative;
   margin: 5px;
   border-radius: 5px;
 }
@@ -86,16 +90,17 @@ section {
   max-width: 100%;
   width: 22rem;
   height: 12rem;
-	 opacity: 0.4;
-	transform: scale(1.15);   /*this make the images 115%bigger than the orginal size of the picture. this enables us to add an effect were wghen we hover the image zooms out to its orginal scale*/
-	transition: transform 0.5s, opacity 0.5s;
-	margin: 0 auto;
-	padding: 0;
+  opacity: 0.4;
+  transform: scale(1.15);
+  transition: transform 0.5s, opacity 0.5s;
+  margin: 0 auto;
+  padding: 0;
 
 }
 
 .photo img:hover {
-	transform: scale(1.04);
-	opacity: 1;
+  transform: scale(1.04);
+  opacity: 1;
 }
+
 </style>

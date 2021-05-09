@@ -78,19 +78,8 @@ export default {
     grid-template-columns: 1fr;
   }
 
-  div:first-of-type {
-  }
-
-  .form-block {
-  }
-
-  #address-list div {
-  }
-
-  .opening-times {}
-
   @media only screen and (max-width: 1024px) {
-    section {}
+    /* section {} */
   }
 
 </style>
