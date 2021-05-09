@@ -1,26 +1,11 @@
 
 // Feature: Navigate Site Pages
 
-// Acceptance Criteria: 
-
 // User Story:
 // sneario: Navigate Site pages using navigation links
 // Given
 // When
 // Then
-
-// User Story:
-// sneario:
-// Given
-// When
-// Then
-// And
-
-//  Cypress
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
 
 // // BDD Test Case Logic: Navigation Feature containing all the user stories scnarios (deatiled above)
 

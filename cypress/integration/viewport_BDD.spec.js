@@ -1,38 +1,59 @@
+// /// <reference types="cypress" />
 
-// Feature: Responsive Interface
+// context('Viewport', () => {
+//     beforeEach(() => {
+//       cy.visit('https://example.cypress.io/commands/viewport')
+//     })
 
-// Acceptance Criteria:
+//     it('cy.viewport() - set the viewport size and dimension', () => {
+//       // https://on.cypress.io/viewport
 
-// User Story:
-// sneario: Interact with website using mobile
-// Given
-// When
-// Then
+//       cy.get('#navbar').should('be.visible')
+//       cy.viewport(320, 480)
 
-// User Story: Interact with website using Tablet
-// sneario:
-// Given
-// When
-// Then
-// And
+//       // the navbar should have collapse since our screen is smaller
+//       cy.get('#navbar').should('not.be.visible')
+//       cy.get('.navbar-toggle').should('be.visible').click()
+//       cy.get('.nav').find('a').should('be.visible')
 
-// User Story: Interact with website using Desktop
-// sneario:
-// Given
-// When
-// Then
-// And
+//       // lets see what our app looks like on a super large screen
+//       cy.viewport(2999, 2999)
 
-//  Cypress
-// Visit a web page.
-// Query for an element.
-// Interact with that element.
-// Assert about the content on the page.
+//       // cy.viewport() accepts a set of preset sizes
+//       // to easily set the screen to a device's width and height
 
-// // BDD Test Case Logic: Responsive Interface Feature containing all the user stories scnarios (deatiled above)
+//       // We added a cy.wait() between each viewport change so you can see
+//       // the change otherwise it is a little too fast to see :)
 
-//    1. visit services page URL
-//    2. url chould include /about/team uri
-//    2. Query for the head title of the team page
-//    3. Interact with the head title tag
-//    4. The title should be contain the page title
+//       cy.viewport('macbook-15')
+//       cy.wait(200)
+//       cy.viewport('macbook-13')
+//       cy.wait(200)
+//       cy.viewport('macbook-11')
+//       cy.wait(200)
+//       cy.viewport('ipad-2')
+//       cy.wait(200)
+//       cy.viewport('ipad-mini')
+//       cy.wait(200)
+//       cy.viewport('iphone-6+')
+//       cy.wait(200)
+//       cy.viewport('iphone-6')
+//       cy.wait(200)
+//       cy.viewport('iphone-5')
+//       cy.wait(200)
+//       cy.viewport('iphone-4')
+//       cy.wait(200)
+//       cy.viewport('iphone-3')
+//       cy.wait(200)
+
+//       // cy.viewport() accepts an orientation for all presets
+//       // the default orientation is 'portrait'
+//       cy.viewport('ipad-2', 'portrait')
+//       cy.wait(200)
+//       cy.viewport('iphone-4', 'landscape')
+//       cy.wait(200)
+
+//       // The viewport will be reset back to the default dimensions
+//       // in between tests (the  default can be set in cypress.json)
+//     })
+//   })
