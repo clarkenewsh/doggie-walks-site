@@ -29,7 +29,7 @@
 // - Acceptance
 // - Integration
 
-describe('Contact Doggie Walks', () => {
+describe('Contact Form Doggie Walks', () => {
   beforeEach(() => {
     cy.visit('http://localhost:3000/contact')
   })
