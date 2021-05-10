@@ -10,27 +10,27 @@
     <ul class="gallery">
       <li>
         <figure class="photo">
-          <img src="~/assets/pexels-photo-275717.jpeg">
+          <img src="~/assets/pexels-photo-275717.jpeg" alt="Dog shaking a paw with woman">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="~/assets/pexels-photo-283012.jpeg">
+          <img src="~/assets/pexels-photo-283012.jpeg" alt="Person walking a dog">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="~/assets/pexels-photo-350428.jpeg">
+          <img src="~/assets/pexels-photo-350428.jpeg" alt="Dog laying on the grass">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="~/assets/pexels-photo-422220.jpeg">
+          <img src="~/assets/pexels-photo-422220.jpeg" alt="Dog running across grass with toy in mouth">
         </figure>
       </li>
       <li>
         <figure class="photo">
-          <img src="~/assets/pexels-photo-1487665.jpeg">
+          <img src="~/assets/pexels-photo-1487665.jpeg" alt="dog sitting on the grass">
         </figure>
       </li>
     </ul>
@@ -47,11 +47,13 @@ export default {
 <script>
   export default {
     data() {
+        // Assign page title
       return {
         title: 'Gallery'
       }
     },
     head() {
+        // Return page title
       return {
         title: this.title
       }

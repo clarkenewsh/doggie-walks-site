@@ -37,11 +37,13 @@
 <script>
 export default {
   data () {
+    // Assign page title
     return {
       title: 'About us'
     }
   },
   head () {
+    // Return page title
     return {
       title: this.title
     }

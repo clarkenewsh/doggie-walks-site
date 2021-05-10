@@ -58,11 +58,13 @@
 <script>
 export default {
   data () {
+    // Assign page title
     return {
       title: 'Contact'
     }
   },
   head () {
+    // Return page title
     return {
       title: this.title
     }

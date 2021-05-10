@@ -7,22 +7,22 @@
     <p>We ensure that our knowledge is kept up-to-date by attending regular seminars and courses presented by well-respected canine trainers, behaviorists and practitioners.</p>
     <div>
       <figure>
-        <img src="~/assets/lori-hanson.jpg">
+        <img src="~/assets/lori-hanson.jpg" alt="Portrait of Lori Hanson">
         <h3>Lori Hanson</h3>
         <figcaption>Founder of Doggie Walks</figcaption>
       </figure>
       <figure>
-        <img src="~/assets/gary-simpson.jpg">
+        <img src="~/assets/gary-simpson.jpg" alt="Portrait of Gary Simpson">
         <h3>Gary Simpson</h3>
         <figcaption>Team manager</figcaption>
       </figure>
       <figure>
-        <img src="~/assets/rebecca-harrison.jpg">
+        <img src="~/assets/rebecca-harrison.jpg" alt="Portrait of Rebecca Harrison">
         <h3>Rebecca Harrison</h3>
         <figcaption>Professional dog walker</figcaption>
       </figure>
       <figure>
-        <img src="~/assets/joanna-davies.jpg">
+        <img src="~/assets/joanna-davies.jpg" alt="Portrait of Joanna Davies">
         <h3>Joanna Davies</h3>
         <figcaption>Professional Dog walker</figcaption>
       </figure>
@@ -32,11 +32,13 @@
 <script>
 export default {
   data () {
+    // Assign page title
     return {
       title: 'Meet the Team'
     }
   },
   head () {
+    // Return page title
     return {
       title: this.title
     }

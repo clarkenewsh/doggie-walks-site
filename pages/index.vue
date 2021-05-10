@@ -14,20 +14,20 @@
         We recognise every dog's needs are different and how busy daily life can be. With services starting from only
         £10 we ensure you the best possible service to suit the needs of both you and your pooch.
       </p><p>
-        We are also fully insured for everybody's peace of mind, for more information on this please <a href="">contact
+        We are also fully insured for everybody's peace of mind, for more information on this please <a href="tel:01695-883-112">contact
           us</a> or email at <a href="mailto:info@doggiewalks.co.uk">info@doggiewalks.co.uk</a>
       </p>
       <div>
         <figure>
-          <img src="~/assets/dog-walk.png">
+          <img src="~/assets/dog-walk.png" alt="illustration of person walking a dog">
           <li>Pet Sitting (Puppy and Elderly)</li>
         </figure>
         <figure>
-          <img src="~/assets/pet-sitting.png">
+          <img src="~/assets/pet-sitting.png" alt="illustration of pet sitting">
           <li>Small pet visits</li>
         </figure>
         <figure>
-          <img src="~/assets/night-sitting.png">
+          <img src="~/assets/night-sitting.png" alt="illustration of dog staying overnight">
           <li>Overnight Pet Sitting</li>
         </figure>
       </div>
@@ -52,12 +52,14 @@
 
 <script>
 export default {
+  // Assign page title
   data () {
     return {
       title: 'Home Page'
     }
   },
   head () {
+    // Return page title
     return {
       title: this.title
     }
@@ -137,7 +139,6 @@ button:hover {
       width: 15rem;
       height: 12rem;
   }
-   
   }
 
 </style>
