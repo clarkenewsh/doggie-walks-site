@@ -3,19 +3,19 @@
 // Feature: Book / Query Dog a service
 
 // User Story:
-// sneario: Book a dog walking service througth contact form
+// scenario: Book a dog walking service through contact form
 // Given
 // When
 // Then
 
 // BDD Test Case Logic - Querying/booking a Dog walking service - for each service so will need a for each test case
 // 1. visit services page URL - http://localhost:3000/services
-// 2. url should include /cntact
+// 2. url should include /contact
 // 3. Find/query the div tag with class "service-card"
 // 4. Interact with the h2 tag
-// 5. The h2 tag tite should contain 'Dog Walking'
+// 5. The h2 tag title should contain 'Dog Walking'
 // 5.1 repeat the same process for the other two service cards
-// 6. Get the 'conbtact us' button
+// 6. Get the 'contact us' button
 // 7. click it
 // 8. visit services page URL
 // 9. Find the button tag with class 'btn' with a tag text 'Book now'

@@ -3,12 +3,12 @@
 // Feature: Contact CTA (email & phone)
 
 // User Story: As a doggie walks user, I want to be able to be able to contact the head office by phone or email, so that I can enquire about a service they offer.
-// sneario: Contact busniess by email
-// Given
-// When
-// Then
+// scenario: Contact business by email
+// Given I want to contact the business by phone
+// When I click the button to call doggie walks
+// Then a modal opens and enables me to confirm a the call
 
-// // BDD Test Case Logic: Contact CTA Feature (email & phone) containing all the user stories scnarios (deatiled above)
+// // BDD Test Case Logic: Contact CTA Feature (email & phone) containing all the user stories scenarios (detailed above)
 
 // 1. visit home page URL - http://localhost:3000/
 // 2. Grab the browser URL, ensure it includes /

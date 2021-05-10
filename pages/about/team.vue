@@ -4,7 +4,7 @@
       Meet the Team &#128062;
     </h1>
     <p>Meet the doggie walks team! We’re fully trained and insured to work with animals and are committed to the health and benefits of your pet. We aim to keep providing the best knowledge regarding dogs as we can, and to do this we believe you cannot sit still in this occupation as we learn more about dogs daily. </p>
-    <p>We ensure that our knowledge is kept up-to-date by attending regular seminars and courses presented by well-respected canine trainers, behaviorists and practitioners.</p>
+    <p>We ensure that our knowledge is kept up-to-date by attending regular seminars and courses presented by well-respected canine trainers, behaviourists and practitioners.</p>
     <div>
       <figure>
         <img src="~/assets/lori-hanson.jpg" alt="Portrait of Lori Hanson">
