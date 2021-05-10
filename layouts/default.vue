@@ -13,6 +13,7 @@
 </template>
 
 <script>
+// Import components int to default layout
 import NavBar from '~/components/NavBar.vue'
 import TheFooter from '~/components/TheFooter.vue'
 import Slogan from '~/components/Slogan.vue'

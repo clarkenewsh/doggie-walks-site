@@ -16,7 +16,7 @@
     </ul>
     <ul>
       <li><strong>Contact Us</strong></li>
-      <li><a href="">Phone: 01695 883 112</a></li>
+      <li><a href="tel:01695-883-112">01695 883 112</a></li>
       <li>
         <a href="mailto:info@doggiewalks.co.uk">Email: info@doggiewalks.co.uk</a>
       </li>
